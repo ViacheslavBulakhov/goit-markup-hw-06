@@ -636,14 +636,63 @@
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal-anim">
-    <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>
-            <svg class="modal-close0icon" width="20" height="20px">
-                <use href="./images/icons.svg#icon-close-black-18dp-2-1-1">
-                </use>
-            </svg>
-        </button>
-    </div>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-close-icon" width="20" height="20px">
+                    <use href="./images/icons.svg#icon-close-black-18dp-2-1-1">
+                    </use>
+                </svg>
+            </button>
+            <p class="modal-title">
+                Оставьте свои данные, мы вам перезвоним
+            </p>
+            <form action="#">
+                
+                <div class="input-wrap">       
+                <label class="input-text">Имя
+                    <input type="text" 
+                            class="form-input"
+                            name="user-name" 
+                            placeholder="" 
+                            required
+                            minlength="2"
+                            title="Вася Пупкин">
+                </label>
+                </div>
+                <div class="input-wrap">    
+                <label class="input-text">Телефон
+                    <input type="tel" 
+                            class="form-input"
+                            name="user-tel" 
+                            placeholder="" 
+                            required
+                            title="+380991111111">
+                </label>
+                </div>
+                <div class="input-wrap">
+                <label class="input-text">Почта
+                    <input type="email" 
+                            class="form-input"
+                            name="user-email" 
+                            placeholder="" 
+                            required
+                            title="qwerty@gmail.com">
+                </label>
+                </div>
+                <div class="input-wrap ">
+                <label class="input-text" for="user ">Комментарий</label>
+        
+                <textarea name="user-comments" 
+                id="user" 
+                class="form-input-comments" 
+                placeholder="Введите текст" 
+                ></textarea>
+
+                </div>
+                <button type="submit" class="modal-submit"> Отправить </button>
+                
+            </form>
+        </div>
     </div>
 
 
