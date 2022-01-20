@@ -626,27 +626,24 @@
             
             </ul>
             </div>
+            <form action="#">
             <div class="mailing-list-wrap">
                 <p class="footer-card-title">Подпишитесь на рассылку</p>
-                <div class="mailing-wrap">
-                    <form action="#">
-                        <input type="text" 
-                                class="footer-mailing" 
-                                placeholder="E-mail" 
-                                required 
-                                title="qwerty@gmail.com">
-                    </form>
-                    <button type="submit" class="mailing-submit main-button">Подписаться 
-                        <svg class="submit-icon" width="24px" height="24px">
-                            <use href="./images/icons.svg#icon-icon-send">
-                        
-                            </use>
-                        </svg>
-                    </button>
+                    <div class="mailing-wrap">
+                            <input type="text" 
+                                    class="footer-mailing" 
+                                    placeholder="E-mail" 
+                                    required 
+                                    title="qwerty@gmail.com">
+                        <button type="submit" class="mailing-submit main-button">Подписаться 
+                            <svg class="submit-icon" width="24px" height="24px">
+                                <use href="./images/icons.svg#icon-icon-send">
+                                </use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-
-
-                
+            </form>
 
             </div>
 
@@ -671,61 +668,81 @@
             <form action="#">
                 
                 <div class="input-wrap">       
-                <label class="input-text">Имя
-                    <input type="text" 
-                            class="form-input"
-                            name="user-name" 
-                            placeholder="" 
-                            required
-                            minlength="2"
-                            title="Вася Пупкин">
-                </label>
+                <label class="input-text" for="user-name">Имя</label>
+                    <div class="input-icon-wrap">
+                    <input type="text" class="form-input" name="user-name" placeholder="" required minlength="2" title="Вася Пупкин"
+                        id="user-name">
                         <svg class="input-icon" width="18px" height="18px">
                             <use href="./images/icons.svg#icon-person">
-                        
                             </use>
                         </svg>
+                        </div>
                 </div>
                 <div class="input-wrap">    
-                <label class="input-text">Телефон
-                    <input type="tel" 
+                <label class="input-text" for="user-tel">Телефон</label>
+                    <div class="input-icon-wrap">
+                        <input type="tel" 
                             class="form-input"
                             name="user-tel" 
                             placeholder="" 
                             required
-                            title="+380991111111">
-                </label>
+                            title="+380991111111"
+                            id="user-tel">
+                
                         <svg class="input-icon" width="18px" height="18px">
                             <use href="./images/icons.svg#icon-phone">
-                        
                             </use>
                         </svg>
+                    </div>
                 </div>
-                <div class="input-wrap">
-                <label class="input-text">Почта
-                    <input type="email" 
-                            class="form-input"
+            <div class="input-wrap">
+                <label class="input-text" for="user-mail">Почта</label>
+                    <div class="input-icon-wrap">
+                        <input type="email" 
+                            class="form-input" 
                             name="user-email" 
                             placeholder="" 
-                            required
-                            title="qwerty@gmail.com">
-                </label>
+                            required 
+                            title="qwerty@gmail.com" 
+                            id="user-mail">
+                        
+
                         <svg class="input-icon" width="18px" height="18px">
                             <use href="./images/icons.svg#icon-Vector">
-                        
                             </use>
                         </svg>
-                </div>
-                <div class="input-wrap ">
-                <label class="input-text" for="user">Комментарий</label>
+                    </div>
+            </div>
+
+                <div class="input-text-wrap ">
+                <label class="input-text" for="qwerty">Комментарий</label>
         
                 <textarea name="user-comments" 
-                id="user" 
+                id="qwerty" 
                 class="form-input-comments" 
                 placeholder="Введите текст" 
                 ></textarea>
-
                 </div>
+
+                <div class="input-police-wrap">
+                    <input type="checkbox"
+                    name="police"
+                    class="input-police "
+                    id="police">
+
+                        <svg class="check-icon" width="16px" height="15px">
+                            <use href="./images/icons.svg#icon-icon-check">
+                            </use>
+                        </svg>
+
+                    <label for="police" class="police-text">Соглашаюсь с рассылкой и принимаю
+                        <a href="#" class="agreement link">
+                            Условия договора
+                        </a>
+                    </label>
+                    
+                </div>
+
                 <button type="submit" class="modal-submit"> Отправить </button>
                 
             </form>
